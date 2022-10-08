@@ -8,7 +8,7 @@ package tarea1;
  *
  * @author fravidal2021
  */
-public class cliente {
+public class Cliente {
 
     private String nombre;
     private String rut;

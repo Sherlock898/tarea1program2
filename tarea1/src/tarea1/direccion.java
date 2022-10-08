@@ -8,7 +8,7 @@ package tarea1;
  *
  * @author fravidal2021
  */
-public class direccion {
+public class Direccion {
 
     private String direccion;
 }

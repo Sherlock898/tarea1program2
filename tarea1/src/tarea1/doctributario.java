@@ -8,6 +8,6 @@ package tarea1;
  *
  * @author fravidal2021
  */
-public class doctributario {
+public class DocTributario {
     
 }

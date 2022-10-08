@@ -24,4 +24,8 @@ public class DetalleOrden {
     public float calcPeso(){
         return articulo.getPeso() * cantidad;
     }
+    
+    public String toString(){
+        return Integer.toString(cantidad) + articulo.toString();
+    }
 }

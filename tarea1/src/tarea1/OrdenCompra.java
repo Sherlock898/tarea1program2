@@ -6,15 +6,18 @@ public class OrdenCompra {
     private Date fecha;
     private String estado;
     private ArrayList<DetalleOrden> detalles;
+    private Cliente cliente;
     
-    public OrdenCompra(Date fecha, String estado){
+    public OrdenCompra(Cliente cliente, Date fecha, String estado){
+        this.cliente = cliente;
         this.fecha = fecha;
         this.estado = estado;
         detalles = new ArrayList<DetalleOrden>();
     }
     
-    public void addDetalle(DetalleOrden detalle){
-        detalles.add(detalle);
+    public void addProducto(Articulo articulo, int cantidad){
+        DetalleOrden dO = new DetalleOrden(articulo, cantidad);
+        detalles.add(dO);
     }
     
     public float calcPrecio(){
@@ -47,5 +50,9 @@ public class OrdenCompra {
             peso += detalles.get(i).calcPeso();
         }
         return peso;
+    }
+    
+    public String toString(){
+        return fecha.toString() + " " + estado + " " + cliente.toString() + "\n    Peso: " + this.calcPeso() + "Kg Precio: $" + this.calcPrecio();
     }
 }
