@@ -13,5 +13,9 @@ public class Pago {
     public float getMonto(){
         return monto;
     }
+    
+    public String toString(){
+        return fecha + " Monto: " + monto; 
+    }
 
 }

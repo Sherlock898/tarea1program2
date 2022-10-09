@@ -44,6 +44,8 @@ public class Tarea1 {
         o3.addPago(billeteDeDiezmil);
         System.out.println(o3.toString());
 
+        System.out.println(d1.toString());
+        System.out.println(baston.toString());
+        System.out.println(billeteDeDiezmil.toString());
     }
-    
 }
