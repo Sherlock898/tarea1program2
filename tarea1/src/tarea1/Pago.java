@@ -9,4 +9,9 @@ public class Pago {
         this.monto = monto;
         this.fecha = fecha;
     }
+
+    public float getMonto(){
+        return monto;
+    }
+
 }
